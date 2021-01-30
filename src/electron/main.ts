@@ -8,11 +8,11 @@ async function createWindow() {
     frame: false,
     webPreferences: {
       nodeIntegration: true,
-      devTools: true
+      // devTools: true
     }
   })
   window.loadFile('index.html')
-  window.webContents.openDevTools()
+  // window.webContents.openDevTools()
 
   startServer(window)
 }
